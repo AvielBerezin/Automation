@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "src/out",
+    "outDir": "out",
     "module": "CommonJS",
     "noImplicitAny": true,
     "noImplicitReturns": true,
