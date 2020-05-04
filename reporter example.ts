@@ -1,6 +1,6 @@
 import 'colors';
-import { reporter, resultTree, rawAction, errorSome } from './core';
-import { waitResult } from './raw action manipulators';
+import { reporter, resultTree, rawAction } from './core';
+import { waitResult, errorSome, gotExpected } from './raw action manipulators';
 
 
 export type result<R> = { status: 'passed' } | { status: 'failed', reason: R }
