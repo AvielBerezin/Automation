@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "outDir": "src/out",
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": true,
+    "target": "ES6",
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true
+  },
+  "include": [
+    "./src/ts/**/*"
+  ],
+  "exclude": [
+    "node-modules",
+    "./**/meta/**/*"
+  ],
+  "ts-node": {
+    "compiler": "typescript"
+  }
+}
