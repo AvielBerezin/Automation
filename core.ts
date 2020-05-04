@@ -3,16 +3,6 @@ import { WebDriver, Builder } from "selenium-webdriver";
 
 export type reporter<R> = (resultTree: resultTree<R>) => Promise<void>;
 export type rawAction<R> = (driver: WebDriver) => Promise<R>;
-export type gotExpected<G,E extends G = G> = { got: G, expected: E };
-export const getExpect: <G,E extends G>(expected: E, action: rawAction<G>) => rawAction<gotExpected<G,E>>
-  = (expected, action) => async driver => (
-    { got: await action(driver)
-    , expected }
-  );
-
-export type errorSomeError<E> = { type: 'error', error: E };
-export type errorSomeValue<R> = { type: 'result', value: R }
-export type errorSome<E,R> = errorSomeError<E> | errorSomeValue<R>;
 
 export type treeNodeType = 'leaf' | 'node';
 
