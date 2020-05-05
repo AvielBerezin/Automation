@@ -1,6 +1,6 @@
-import { activate, passTo, sequence, elevate, reportingAction } from './core';
-import { example_reporter, result, resultOfWait, resultOfVoid, resultOfGotExpected } from "./reporter example";
-import { not, waitFor } from './raw action manipulators';
+import { activate, passTo, sequence, elevate, reportingAction } from '../core';
+import { example_reporter, result, resultOfWait, resultOfVoid, resultOfGotExpected } from "../reporters/reporter example";
+import { not, waitFor } from '../raw action manipulators';
 import { menu, minimap } from "./maps";
 
 const openAndCloseMenu: reportingAction<result<unknown>> =
